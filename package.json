@@ -24,11 +24,11 @@
         "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
             "prettier --write"
         ],
-        "**/{aura,lwc}/**/*.js": [
+        "**/{aura,lwc}/**": [
             "eslint"
         ],
         "**/lwc/**": [
-            "sfdx-lwc-jest -- --bail --findRelatedTests --passWithNoTests"
+            "sfdx-lwc-jest --skipApiVersionCheck -- --bail --findRelatedTests"
         ]
     },
     "devDependencies": {
@@ -52,6 +52,6 @@
         "ssdx-cli": "^1.6.4"
     },
     "volta": {
-        "node": "20.15.0"
+        "node": "18.19.1"
     }
 }
