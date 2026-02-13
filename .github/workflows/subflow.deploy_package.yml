@@ -102,7 +102,7 @@ jobs:
         with:
           app-id: ${{ secrets.SF_GITHUB_BOT_APP_ID }}
           private-key: ${{ secrets.SF_GITHUB_BOT_PRIVATE_KEY }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           cache: npm # fetch cache of packages to install
           token: ${{ steps.generate_token.outputs.token }} # needs custom token to avoid rate limit

@@ -337,7 +337,7 @@ jobs:
           set-default-dev-hub: true
 
       # Install npm dependencies
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           cache: npm # fetch cache of packages to install
           token: ${{ steps.generate_token.outputs.token }} # needs custom token to avoid rate limit
